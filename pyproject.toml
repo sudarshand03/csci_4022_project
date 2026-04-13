@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csci-4022-project"
+version = "1.0.0"
+description = "Random graph analysis using PageRank, dimensionality reduction, and GMM clustering."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Adithya Bhaskara" },
+  { name = "Sudarshan Damodharan" },
+  { name = "Ali Haroon" }
+]
+
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "scipy>=1.11",
+  "networkx>=3.2",
+  "scikit-learn>=1.4",
+  "matplotlib>=3.8",
+  "jupyter>=1.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+  "clustering",
+  "features",
+  "graph_generator",
+  "pagerank",
+  "reduction",
+  "visualization"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
