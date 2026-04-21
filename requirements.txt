@@ -1,0 +1,7 @@
+matplotlib>=3.8
+networkx>=3.2
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+scipy>=1.13
+-e .
