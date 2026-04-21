@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "csci-4022-project"
 version = "1.0.0"
-description = "Random graph analysis using PageRank, dimensionality reduction, and GMM clustering."
+description = "Random graph analysis using PageRank, PCA, GMM clustering, and intervention simulations."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -21,18 +21,23 @@ dependencies = [
   "networkx>=3.2",
   "scikit-learn>=1.4",
   "matplotlib>=3.8",
-  "jupyter>=1.0"
+  "jupyter>=1.0",
+  "pytest>=8.0"
 ]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 py-modules = [
-  "clustering",
+  "config",
+  "graph_models",
   "features",
-  "graph_generator",
-  "pagerank",
   "reduction",
-  "visualization"
+  "clustering",
+  "diffusion",
+  "interventions",
+  "metrics",
+  "visualization",
+  "experiments"
 ]
 
 [tool.pytest.ini_options]
