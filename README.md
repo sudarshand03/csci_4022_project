@@ -17,32 +17,38 @@ The goal is to better understand how network structure affects spread dynamics a
 ## Repository Structure
 
 ```text
-├── README.md
-├── cleaned_random_graph_analysis.ipynb
-├── pyproject.toml
-├── requirements.txt
-├── src/
-│   ├── config.py
-│   ├── analysis/
-│   │   ├── clustering.py
-│   │   ├── experiments.py
-│   │   ├── features.py
-│   │   ├── graph_models.py
-│   │   ├── metrics.py
-│   │   └── reduction.py
-│   ├── plotting/
-│   │   ├── __init__.py
-│   │   └── visualization.py
-│   └── simulation/
-│       ├── __init__.py
-│       ├── diffusion.py
-│       └── interventions.py
-└── tests/
-    ├── test_diffusion.py
-    ├── test_features.py
-    ├── test_graph_models.py
-    ├── test_interventions.py
-    └── test_metrics.py
+Directory structure:
+└── sudarshand03-csci_4022_project/
+    ├── README.md
+    ├── main.py
+    ├── pyproject.toml
+    ├── requirements.txt
+    ├── results/
+    │   ├── raw/
+    │   │   ├── graph_level_results.pkl
+    │   │   ├── intervention_summary.pkl
+    │   │   └── paired_comparisons.pkl
+    │   └── tables/
+    │       ├── graph_level_results.csv
+    │       ├── intervention_summary.csv
+    │       ├── paired_comparisons.csv
+    │       └── static_summary.csv
+    └── src/
+        ├── config.py
+        ├── analysis/
+        │   ├── clustering.py
+        │   ├── experiments.py
+        │   ├── features.py
+        │   ├── graph_models.py
+        │   ├── metrics.py
+        │   └── reduction.py
+        ├── plotting/
+        │   ├── __init__.py
+        │   └── visualization.py
+        └── simulation/
+            ├── __init__.py
+            ├── diffusion.py
+            └── interventions.py
 
 ```
 
