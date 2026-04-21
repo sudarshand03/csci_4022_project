@@ -27,18 +27,11 @@ dependencies = [
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-py-modules = [
-  "config",
-  "graph_models",
-  "features",
-  "reduction",
-  "clustering",
-  "diffusion",
-  "interventions",
-  "metrics",
-  "visualization",
-  "experiments"
-]
+py-modules = ["config"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["analysis", "analysis.*", "simulation", "simulation.*", "plotting", "plotting.*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
