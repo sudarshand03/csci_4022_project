@@ -1,49 +1,48 @@
-# csci_4022_project
+# PageRank and Infection Dynamics on Random Graphs
 
-## Setup Instructions
+This project studies how graph structure influences diffusion and infection dynamics on random networks, and how centrality-based methods such as PageRank can be used to analyze or intervene in those processes.
 
-### 1. Clone the repository
+## Overview
 
-### 2. Create a venv
-python3 -m venv .venv
-source .venv/bin/activate
+The repository contains tools for:
+- generating and analyzing random graphs,
+- extracting graph features,
+- simulating diffusion or infection processes,
+- evaluating intervention strategies,
+- computing performance metrics, and
+- visualizing experimental results.
 
-### 3. Install Dependencies
-pip install --upgrade pip
+The goal is to better understand how network structure affects spread dynamics and which graph-based methods are most useful for prediction and control.
 
-pip install -e .
+## Repository Structure
 
-*allows you to import modules directly e.g.*
+```text
+├── README.md
+├── cleaned_random_graph_analysis.ipynb
+├── pyproject.toml
+├── requirements.txt
+├── src/
+│   ├── config.py
+│   ├── analysis/
+│   │   ├── clustering.py
+│   │   ├── experiments.py
+│   │   ├── features.py
+│   │   ├── graph_models.py
+│   │   ├── metrics.py
+│   │   └── reduction.py
+│   ├── plotting/
+│   │   ├── __init__.py
+│   │   └── visualization.py
+│   └── simulation/
+│       ├── __init__.py
+│       ├── diffusion.py
+│       └── interventions.py
+└── tests/
+    ├── test_diffusion.py
+    ├── test_features.py
+    ├── test_graph_models.py
+    ├── test_interventions.py
+    └── test_metrics.py
 
-``
-from graph_generator import generate_erdos_renyi
-``
-``` text
-Directory structure:
-└── sudarshand03-csci_4022_project/
-    ├── README.md
-    ├── cleaned_random_graph_analysis.ipynb
-    ├── pyproject.toml
-    ├── requirements.txt
-    ├── src/
-    │   ├── config.py
-    │   ├── analysis/
-    │   │   ├── clustering.py
-    │   │   ├── experiments.py
-    │   │   ├── features.py
-    │   │   ├── graph_models.py
-    │   │   ├── metrics.py
-    │   │   └── reduction.py
-    │   ├── plotting/
-    │   │   ├── __init__.py
-    │   │   └── visualization.py
-    │   └── simulation/
-    │       ├── __init__.py
-    │       ├── diffusion.py
-    │       └── interventions.py
-    └── tests/
-        ├── test_diffusion.py
-        ├── test_features.py
-        ├── test_graph_models.py
-        ├── test_interventions.py
-        └── test_metrics.py
+```
+
